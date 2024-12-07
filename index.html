@@ -14,11 +14,20 @@
     <link rel="stylesheet" href="css/index.mobile.css">
     <link rel="icon" href="public/logos/logo.png">
 
+    <script type="module" src="js/index.js"></script>
+
     <title>Portafolio</title>
 </head>
 
 <body>
     <header>
+
+        <div class="boton-burguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -121,21 +130,29 @@
         <div class="tipos-proyectos">
             <ul>
                 <li>
-                    <h3>Ilustraciones</h3>
+                    <a href="#ilustraciones">
+                        <h3>Ilustraciones</h3>
+                    </a>
                 </li>
                 <li>
-                    <h3>Fotografías</h3>
+                    <a href="#fotografias">
+                        <h3>Fotografías</h3>
+                    </a>
                 </li>
                 <li>
-                    <h3>Diseños Indenpendientes <br> <span>(Posters)</span></h3>
+                    <a href="#disenos">
+                        <h3>Diseños Indenpendientes <br> <span>(Posters)</span></h3>
+                    </a>
                 </li>
                 <li>
-                    <h3>Branding</h3>
+                    <a href="#branding">
+                        <h3>Branding</h3>
+                    </a>
                 </li>
             </ul>
         </div>
 
-        <section class="seccion-ilustraciones">
+        <section class="seccion-ilustraciones" id="ilustraciones">
             <img src="public/imagenes/ilustraciones/ilustraciones.png" alt="ilustraciones">
 
             <div class="contenido-ilustraciones">
@@ -150,7 +167,7 @@
 
         </section>
 
-        <section class="seccion-disenos">
+        <section class="seccion-disenos" id="disenos">
             <img src="public/imagenes/disenos/disenos.png" alt="diseños">
 
             <div class="contenido-disenos">
@@ -160,7 +177,7 @@
             </div>
         </section>
 
-        <section class="seccion-fotografias">
+        <section class="seccion-fotografias" id="fotografias">
             <!-- <div class="wave-fotografias"> -->
 
             <!-- <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
@@ -190,8 +207,7 @@
             </div>
         </section>
 
-        <section class="seccion-branding">
-
+        <section class="seccion-branding" id="branding">
             <div class="contenido-branding">
                 <img class="titulo" src="public/imagenes/branding/branding.png" alt="branding">
                 <img class="branding mugs" src="public/imagenes/branding/mugs.png" alt="mugs">

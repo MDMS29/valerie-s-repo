@@ -10,6 +10,8 @@
     --vinotinto-hover: #531110;
     --vinotinto-focus: #340B0A;
     --blanco: #FFFFFF;
+    --vinotinto-opaco: #5311109c; 
+    --vinotinto-claro: #F1C4C4;
 }
 
 html {
@@ -43,7 +45,12 @@ section.seccion-hero {
 }
 
 header {
+    z-index: 1;
     width: 100%;
+
+    & div.boton-burguer {
+        display: none;
+    }
 
     &>nav {
         display: flex;
@@ -115,10 +122,12 @@ section.seccion-sobre-mi {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap-reverse;
+        /* justify-content: center; */
 
         & div.contenido-programas {
             display: flex;
             flex-direction: column;
+
             gap: 1rem;
 
             & h1 {
@@ -181,14 +190,12 @@ section.seccion-proyectos {
         height: calc(100vh / 3);
     }
 
-    /* & div.segundo-separador-proyectos {
-        background-color: var(--vinotinto-focus);
-        background-image: url("../public/imagenes/gorro-vinotinto.png");
-        background-position: center center;
-        background-repeat: repeat-x;
-        background-size: calc(100% / 5) 100px;
+    & div.segundo-separador-proyectos {
+        background-image: url("../public/imagenes/division-monitos.png");
+        background-position: center;
+        background-size: cover;
         height: 150px;
-    } */
+    }
 
     & div.tipos-proyectos {
         width: 60%;
@@ -198,10 +205,11 @@ section.seccion-proyectos {
         & ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            color: var(--blanco);
+
             text-transform: uppercase;
             flex-wrap: wrap;
             gap: 1rem;
+            text-decoration: none;
 
             li {
                 width: 500px;
@@ -209,6 +217,11 @@ section.seccion-proyectos {
                 position: relative;
                 padding-left: 35px;
                 margin-left: 40px;
+
+                & a {
+                    color: var(--blanco);
+                    text-decoration: none;
+                }
             }
 
             li::before {
@@ -244,7 +257,7 @@ section.seccion-proyectos {
                 flex: 1;
 
                 & img {
-                    max-width: 700px;
+                    max-width: 800px;
                 }
 
             }
@@ -257,7 +270,7 @@ section.seccion-proyectos {
                 align-items: center;
 
                 & img {
-                    max-width: 700px;
+                    max-width: 600px;
                 }
 
             }
@@ -405,10 +418,12 @@ section.seccion-contacto {
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
+
         &>img {
             width: 8%;
         }
-        &>h1{
+
+        &>h1 {
             font-size: 5rem;
             text-align: center;
             text-transform: uppercase;
@@ -424,7 +439,7 @@ section.seccion-contacto {
         max-width: 1000px;
         gap: 1rem;
         margin: 2rem auto;
-        
+
 
         & a {
             display: flex;
