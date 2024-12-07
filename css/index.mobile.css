@@ -286,9 +286,13 @@
     header {
         position: fixed;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
         background-color: var(--vinotinto-claro);
+
+        & a img {
+            display: block;
+        }
 
         & div.boton-burguer {
             padding: 10px;

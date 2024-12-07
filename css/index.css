@@ -10,7 +10,7 @@
     --vinotinto-hover: #531110;
     --vinotinto-focus: #340B0A;
     --blanco: #FFFFFF;
-    --vinotinto-opaco: #5311109c; 
+    --vinotinto-opaco: #5311109c;
     --vinotinto-claro: #F1C4C4;
 }
 
@@ -47,6 +47,11 @@ section.seccion-hero {
 header {
     z-index: 1;
     width: 100%;
+    /* display: flex; */
+
+    & a img {
+        display: none;
+    }
 
     & div.boton-burguer {
         display: none;
